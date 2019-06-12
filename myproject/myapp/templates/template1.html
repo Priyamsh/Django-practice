@@ -1,0 +1,20 @@
+{%extends "main_template1.html"%}
+{%block title%}
+    Hello World
+{%endblock%}
+{%block content%}
+    <p>
+        {%if today.date == 1%}
+        This is the first day of the month
+        {%elif today.date == 30%}}
+        This is the last day of the month
+        {% else %}
+        I don't know
+        {%endif%}
+    </p>
+    {%for days in days%}
+        <p>
+            {{days}}
+</p>
+    {%endfor%}
+{%endblock%}

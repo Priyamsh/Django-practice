@@ -1,0 +1,8 @@
+{%extends "main_template1.html"%}
+{%block title%}Hello Page{%endblock%}
+{%block content%}<p>
+    Reporter:
+   {%for dr in Dreamreal_objects%}
+        {{dr.name}}</p>
+{%endfor%}
+{% endblock %}
